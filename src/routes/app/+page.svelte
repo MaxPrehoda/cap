@@ -114,15 +114,19 @@
     </Dropzone>
     <div class="flex flex-row mx-auto justify-center py-6 gap-3">
       {#if imageUrl}
-        <div class="flex flex-col transition-all">
+        <div class="flexflex-col transition-all">
           <h2>Original Image</h2>
-          <img class="w-48" src={imageUrl} alt="Uploaded Image" />
+          <img class="w-48 rounded-lg" src={imageUrl} alt="Uploaded Image" />
         </div>
       {/if}
       {#if processedImage}
         <div class="flex flex-col transition-all">
           <h2>Processed Image</h2>
-          <img class="w-48" src={processedImage} alt="Processed Image" />
+          <img
+            class="w-48 rounded-lg"
+            src={processedImage}
+            alt="Processed Image"
+          />
           <Button class="mt-1.5 ml-1.5" on:click={downloadImage}
             >Download Processed Image</Button
           >

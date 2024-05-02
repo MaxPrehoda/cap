@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import axios from "axios";
-  import { Dropzone } from "flowbite-svelte";
+  import { Dropzone, Button } from "flowbite-svelte";
 
   let imageUrl = "";
   let processedImage = null;
@@ -112,18 +112,20 @@
         <p>{showFiles(value)}</p>
       {/if}
     </Dropzone>
-    <div class="flex flex-row mx-auto justify-center py-6">
+    <div class="flex flex-row mx-auto justify-center py-6 gap-3">
       {#if imageUrl}
-        <div class="flex flex-col">
+        <div class="flex flex-col transition-all">
           <h2>Original Image</h2>
           <img class="w-48" src={imageUrl} alt="Uploaded Image" />
         </div>
       {/if}
       {#if processedImage}
-        <div class="flex flex-col">
+        <div class="flex flex-col transition-all">
           <h2>Processed Image</h2>
           <img class="w-48" src={processedImage} alt="Processed Image" />
-          <button on:click={downloadImage}>Download Processed Image</button>
+          <Button class="mt-1.5 ml-1.5" on:click={downloadImage}
+            >Download Processed Image</Button
+          >
         </div>
       {/if}
     </div>

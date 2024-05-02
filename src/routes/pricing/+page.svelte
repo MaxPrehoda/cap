@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex justify-center justify-items-center w-screen h-screen">
-  <div class="flex flex-col lg:flex-row gap-8 mx-auto">
+  <div class="flex flex-col lg:flex-row gap-8 mx-auto py-14">
     <Card class="h-fit" padding="xl">
       <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
         Free plan

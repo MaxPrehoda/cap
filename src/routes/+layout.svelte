@@ -1,17 +1,16 @@
 <script>
   import "../app.pcss";
 
-  import {
-    Navbar,
-    NavBrand,
-    NavLi,
-    NavUl,
-    NavHamburger,
-    Button,
-  } from "flowbite-svelte";
+  import { Navbar,NavBrand,NavLi,NavUl,NavHamburger,Button,} from "flowbite-svelte";
+  
+
 </script>
 
+
+
+
 <Navbar>
+  
   <NavBrand href="/">
     <span
       class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
@@ -24,9 +23,13 @@
   </div>
   <NavUl class="order-1">
     <NavLi href="/" active={true}>Home</NavLi>
-    <NavLi href="/About">About</NavLi>
-    <NavLi href="/Pricing">Pricing</NavLi>
+    <NavLi href="/about">About</NavLi>
+    <NavLi href="/pricing">Pricing</NavLi>
   </NavUl>
 </Navbar>
+
+
+
+
 
 <slot></slot>

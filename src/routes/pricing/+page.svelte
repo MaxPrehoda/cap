@@ -2,9 +2,39 @@
   import { Card } from "flowbite-svelte";
   import { CheckCircleSolid } from "flowbite-svelte-icons";
   import { Button } from "flowbite-svelte";
+  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from 'flowbite-svelte';
 </script>
 
+<div class="h-full w-full relative">
+  <div
+    class="relative flex-col flex gap-5 text-center py-24 font-bold text-6xl"
+  >
+    <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
+      <div
+        class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
+        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"/>
+    </div>
+    <div>Elevate Your Photography </div>
+    <div>with One Click</div>
+    <p class="text-sm">
+      Simplify your editing process, achieve professional-grade results, and enhance your images seamlessly.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 <div class="flex justify-center justify-items-center w-screen h-screen">
+  <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
+    <div
+      class="aspect-[1108/632] w-[35.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
+      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"/>
+  </div>
   <div class="flex flex-col lg:flex-row gap-8 mx-auto">
     <Card class="h-fit" padding="xl">
       <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
@@ -169,3 +199,11 @@
     </Card>
   </div>
 </div>
+
+<Footer footerType="socialmedia">
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <div class="sm:flex sm:items-center sm:justify-between">
+    <img src="/" alt="logo">
+    <FooterCopyright href="/" by="CaptureQuest™" />
+  </div>
+</Footer>

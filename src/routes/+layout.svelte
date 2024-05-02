@@ -24,8 +24,8 @@
   </div>
   <NavUl class="order-1">
     <NavLi href="/" active={true}>Home</NavLi>
-    <NavLi href="/About">About</NavLi>
-    <NavLi href="/Pricing">Pricing</NavLi>
+    <NavLi href="/about">About</NavLi>
+    <NavLi href="/pricing">Pricing</NavLi>
   </NavUl>
 </Navbar>
 

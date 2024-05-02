@@ -47,7 +47,7 @@
         </p>
       </div>
       <div class="mt-10 lg:col-span-7 lg:mt-0">
-        <dl class="space-y-10">
+        <dl>
           <div>
             <dt class="text-base font-semibold leading-7 text-gray-900">
               What are the pricing options for CaptureQuest?
@@ -59,9 +59,9 @@
             </dd>
           </div>
         </dl>
-        <dl class="space-y-10">
+        <dl>
           <div>
-            <dt class="text-base font-semibold leading-7 text-gray-900">
+            <dt class="text-base font-semibold leading-7 text-gray-900 mt-3">
               What are the key features of CaptureQuest?
             </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
@@ -73,9 +73,9 @@
             </dd>
           </div>
         </dl>
-        <dl class="space-y-10">
+        <dl>
           <div>
-            <dt class="text-base font-semibold leading-7 text-gray-900">
+            <dt class="text-base font-semibold leading-7 text-gray-900 mt-3">
               How accurate are the background removal results typically?
             </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">

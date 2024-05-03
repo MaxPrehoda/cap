@@ -1,7 +1,13 @@
 <script>
   import { onMount } from "svelte";
   import axios from "axios";
-  import { Dropzone, Button } from "flowbite-svelte";
+  import { Dropzone } from "flowbite-svelte";
+  import { Dropdown, DropdownItem, Avatar } from "flowbite-svelte";
+  import { ChevronDownOutline } from "flowbite-svelte-icons";
+  import { ButtonGroup, Button } from "flowbite-svelte";
+  const handleClick = () => {
+    alert("Clicked");
+  };
 
   let imageUrl = "";
   let processedImage = null;
@@ -101,37 +107,42 @@
           d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
         />
       </svg>
-      {#if value.length === 0}
-        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-          <span class="font-semibold">Click to upload</span> or drag and drop
-        </p>
-        <p class="text-xs text-gray-500 dark:text-gray-400">
-          SVG, PNG, JPG or GIF (MAX. 800x400px)
-        </p>
-      {:else}
-        <p>{showFiles(value)}</p>
-      {/if}
+      <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+        <span class="font-semibold">Click to upload</span> or drag and drop
+      </p>
+      <p class="text-xs text-gray-500 dark:text-gray-400">
+        SVG, PNG, JPG or GIF (MAX. 800x400px)
+      </p>
+      <p>{showFiles(value)}</p>
     </Dropzone>
     <div class="flex flex-row mx-auto justify-center py-6 gap-3">
-      {#if imageUrl}
-        <div class="flexflex-col transition-all">
-          <h2>Original Image</h2>
-          <img class="w-48 rounded-lg" src={imageUrl} alt="Uploaded Image" />
-        </div>
-      {/if}
-      {#if processedImage}
+      <div class="flexflex-col transition-all">
+        <h2>loading...</h2>
+      </div>
+      <div class="flex flex-row">
         <div class="flex flex-col transition-all">
-          <h2>Processed Image</h2>
-          <img
-            class="w-48 rounded-lg"
-            src={processedImage}
-            alt="Processed Image"
-          />
+          <img class="w-64 rounded-lg" src="before.png" alt="New Image Here" />
+        </div>
+        <div class="flex flex-col">
+          <div class="flex-row flex">
+            <ButtonGroup>
+              <Button class="bg-[#EB4F27] text-white">Photos</Button>
+              <Button class="bg-[#EB4F27] text-white">Colors</Button>
+            </ButtonGroup>
+            <Button
+              >Project users<ChevronDownOutline
+                class="w-6 h-6 ms-2 text-white dark:text-white"
+              /></Button
+            >
+
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="colorpicker" value="#0000ff" />
+          </div>
           <Button class="mt-1.5 ml-1.5" on:click={downloadImage}
             >Download Processed Image</Button
           >
         </div>
-      {/if}
+      </div>
     </div>
   </div>
 </main>

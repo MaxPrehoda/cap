@@ -1,64 +1,67 @@
-
-
 <script lang="ts">
-
-  
-  
-
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
   import axios from "axios";
   import { Dropzone } from "flowbite-svelte";
   import { Dropdown, DropdownItem, Avatar } from "flowbite-svelte";
   import { ChevronDownOutline } from "flowbite-svelte-icons";
   import { ButtonGroup, Button } from "flowbite-svelte";
   $: activeUrl = $page.url.pathname;
-  let activeClass = 'text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-green-500';
-  import { page } from '$app/stores';
+  let activeClass =
+    "text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-green-500";
+  import { page } from "$app/stores";
 
-  let dropdowns = [
-    {
-      id: 'dropdown-1',
-      buttonText:'Photo',
-      content: 'Content for Photo',
-  
-      options: [
-        { label: 'Option 1', href: '/' },
-        { label: 'Option 2', href: '/' },
-        { label: 'Option 3', href: '/' },
-        { label: 'Option 4', href: '/' },
-        { label: 'Option 1', href: '/' },
-        { label: 'Option 2', href: '/' },
-        { label: 'Option 3', href: '/' },
-        { label: 'Option 4', href: '/' },
-      ],
-    },
-    {
-      id: 'dropdown-2',
-      buttonText:'Color',
-      content: 'Content for Color',
-      options: [
-        { label: 'Option A', href: '/' },
-        { label: 'Option B', href: '/' },
-        { label: 'Option C', href: '/' },
-        { label: 'Option D', href: '/' },
-        { label: 'Option A', href: '/' },
-        { label: 'Option B', href: '/' },
-        { label: 'Option C', href: '/' },
-        { label: 'Option D', href: '/' },
-      ],
-    },
-  ];
+  let photoDropdown = {
+    options: [
+      {
+        label: "Option 1",
+        href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        label: "Option 2",
+        href: "https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        label: "Option 3",
+        href: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      { label: "Option 4", href: "/" },
+      { label: "Option 1", href: "/" },
+      { label: "Option 2", href: "/" },
+      { label: "Option 3", href: "/" },
+      { label: "Option 4", href: "/" },
+    ],
+  };
 
+  /*
+      id: "dropdown-2",
+      buttonText: "Color",
+      content: "Content for Color",
+      options: [
+        { label: "Option A", href: "/" },
+        { label: "Option B", href: "/" },
+        { label: "Option C", href: "/" },
+        { label: "Option D", href: "/" },
+        { label: "Option A", href: "/" },
+        { label: "Option B", href: "/" },
+        { label: "Option C", href: "/" },
+        { label: "Option D", href: "/" },
+      ],
+    */
+
+  let photosExpanded = false;
+  let colorsExpanded = false;
   let currentDropdownIndex = 0; // Initially show content for the first dropdown
 
   function toggleDropdown(index) {
     currentDropdownIndex = index;
   }
 
+  const handlePhotosDropdown = () => {
+    photosExpanded = !photosExpanded;
+  };
 
-
-  const handleClick = () => {
-    alert("Clicked");
+  const handleColorsDropdown = () => {
+    colorsExpanded = !colorsExpanded;
   };
 
   let imageUrl = "";
@@ -130,13 +133,6 @@ import { onMount } from "svelte";
     concat += "...";
     return concat;
   };
-
- 
-   
-
-  
-
-
 </script>
 
 <main>
@@ -174,53 +170,85 @@ import { onMount } from "svelte";
       </p>
       <p>{showFiles(value)}</p>
     </Dropzone>
-   
+
     <div class="flex flex-row mx-auto justify-center py-60 gap-3">
-      <div class="flex flex-col transition-all ">
+      <div class="flex flex-col transition-all">
         <h2>loading...</h2>
       </div>
-      <div class="flex flex-row gap-10 border-2 rounded-md	 border-[#EB4F27]">
+      <div
+        class="flex flex-row gap-10 border-2 rounded-md border-[#EB4F27] p-4"
+      >
         <div class="flex flex-row transition-all">
-          <img class="max-w-lg	 rounded-lg" src="before.png" alt="New Image Here" />
+          <img
+            class="max-w-lg rounded-lg"
+            src="before.png"
+            alt="New Image Here"
+          />
         </div>
-
 
         <div class="flex flex-col">
           <div class="flex-row flex">
-            {#each dropdowns as dropdown, index}
-              <div class="relative mt-4" id={dropdown.id}>
-                <button
-                  class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
-                  aria-haspopup="true"
-                  aria-expanded={index === currentDropdownIndex}
-                  on:click={() => toggleDropdown(index)}
+            <div class="relative mt-4">
+              <button
+                class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
+                aria-haspopup="true"
+                aria-expanded={photosExpanded}
+                on:click={() => handlePhotosDropdown()}
+              >
+                Photos
+              </button>
+              {#if photosExpanded}
+                <div
+                  class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
                 >
-                  {dropdown.buttonText}
-                </button>
-                
-                {#if index === currentDropdownIndex}
-                  <div
-                    class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
-                    aria-hidden={index !== currentDropdownIndex}
-                  >
-                    {#each dropdown.options as option}
-                      <a href={option.href} class="flex flex-center px-6 py-3 mr-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                        {option.label}
-                      </a>
-                    {/each}
-                  </div>
-                {/if}
-              </div>
-            {/each}
+                  {#each photoDropdown.options as option}
+                    <a
+                      href={option.href}
+                      class="flex flex-center px-6 py-3 mr-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      <img class="" src={option.href} alt="" />
+                    </a>
+                  {/each}
+                </div>
+              {/if}
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex-row flex">
+            <div class="relative mt-4">
+              <button
+                class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
+                aria-haspopup="true"
+                aria-expanded={colorsExpanded}
+                on:click={() => handlePhotosDropdown()}
+              >
+                Colors
+              </button>
+              {#if colorsExpanded}
+                <div
+                  class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
+                >
+                  {#each photoDropdown.options as option}
+                    <a
+                      href={option.href}
+                      class="flex flex-center px-6 py-3 mr-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                    >
+                      {option.label}
+                    </a>
+                  {/each}
+                </div>
+              {/if}
+            </div>
           </div>
         </div>
 
-          
-          <Button class="mt-20  " on:click={downloadImage}>Download Processed Image</Button>
-          
-        </div>
+        <Button class="mt-20  " on:click={downloadImage}
+          >Download Processed Image</Button
+        >
       </div>
     </div>
-
-    
+  </div>
 </main>

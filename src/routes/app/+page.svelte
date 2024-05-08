@@ -166,16 +166,13 @@ import { onMount } from "svelte";
           d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
         />
       </svg>
-      {#if value.length === 0}
-        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-          <span class="font-semibold">Click to upload</span> or drag and drop
-        </p>
-        <p class="text-xs text-gray-500 dark:text-gray-400">
-          SVG, PNG, JPG or GIF (MAX. 800x400px)
-        </p>
-      {:else}
-        <p>{showFiles(value)}</p>
-      {/if}
+      <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+        <span class="font-semibold">Click to upload</span> or drag and drop
+      </p>
+      <p class="text-xs text-gray-500 dark:text-gray-400">
+        SVG, PNG, JPG or GIF (MAX. 800x400px)
+      </p>
+      <p>{showFiles(value)}</p>
     </Dropzone>
    
     <div class="flex flex-row mx-auto justify-center py-60 gap-3">

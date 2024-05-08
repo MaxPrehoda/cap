@@ -27,7 +27,7 @@
   },
   "type": "module",
   "dependencies": {
-    "particlesjs": "^2.2.3",
-    "axios": "^1.6.8"
+    "axios": "^1.6.8",
+    "particlesjs": "^2.2.3"
   }
 }

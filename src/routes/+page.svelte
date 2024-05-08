@@ -10,6 +10,7 @@
   } from "flowbite-svelte";
   import { CardPlaceholder } from "flowbite-svelte";
   let position = 50;
+  
 
   function handleMouseMove(event) {
     const container = event.currentTarget;
@@ -17,7 +18,15 @@
     const x = event.clientX - boundingRect.left;
     const containerWidth = boundingRect.width;
     position = (x / containerWidth) * 100;
+
+    const dropdownButton = document.getElementById('dropdown-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    
+ 
   }
+  
+
 </script>
 
 <div class="h-full w-full relative py-12">
@@ -108,17 +117,17 @@
 
 <div class="flex flex-col lg:flex-row items-center justify-center h-96">
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-    <div class="p-4 border-2 rounded-md	 border-orange-400"> <!-- Added border utilities -->
+    <div class="p-4 border-2 rounded-md	 border-orange-400"> 
       <h3 class="text-2xl font-bold mb-2">Upload image</h3>
       <p class="text-gray-600">For best results choose an image <br> where the subject has clear edges <br> with nothing overlapping.</p>
     </div>
     
-    <div class="p-4 border-2 rounded-md	 border-orange-400"> <!-- Added border utilities -->
+    <div class="p-4 border-2 rounded-md	 border-orange-400"> 
       <h3 class="text-2xl font-bold mb-2">Remove background</h3>
       <p class="text-gray-600">upload your image to automatically <br> remove the background in an <br> instant.</p>
     </div>
   
-    <div class="p-4 border-2 rounded-md	 border-orange-400"> <!-- Added border utilities -->
+    <div class="p-4 border-2 rounded-md	 border-orange-400"> 
       <h3 class="text-2xl font-bold mb-2">Download image</h3>
       <p class="text-gray-600">Download your new image as a PNG <br> file with a transparent  background <br> to save,share or keep editing</p>
     </div>
@@ -128,4 +137,25 @@
 
 
 
+<div class="flex flex-col">
+  <div class="flex-row flex">
+    <div class="relative inline-block text-left">
+      <div>
+        <button id="dropdown-button" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+          Options
+          <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
 
+      <div id="dropdown-menu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none invisible" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+        <div class="py-1" role="none">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-0">Option 1</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-1">Option 2</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-2">Option 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

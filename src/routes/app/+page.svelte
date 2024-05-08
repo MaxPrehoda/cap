@@ -1,7 +1,65 @@
-<script>
-  import { onMount } from "svelte";
+
+
+<script lang="ts">
+
+  
+  
+
+import { onMount } from "svelte";
   import axios from "axios";
-  import { Dropzone, Button } from "flowbite-svelte";
+  import { Dropzone } from "flowbite-svelte";
+  import { Dropdown, DropdownItem, Avatar } from "flowbite-svelte";
+  import { ChevronDownOutline } from "flowbite-svelte-icons";
+  import { ButtonGroup, Button } from "flowbite-svelte";
+  $: activeUrl = $page.url.pathname;
+  let activeClass = 'text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-green-500';
+  import { page } from '$app/stores';
+
+  let dropdowns = [
+    {
+      id: 'dropdown-1',
+      buttonText:'Photo',
+      content: 'Content for Photo',
+  
+      options: [
+        { label: 'Option 1', href: '/' },
+        { label: 'Option 2', href: '/' },
+        { label: 'Option 3', href: '/' },
+        { label: 'Option 4', href: '/' },
+        { label: 'Option 1', href: '/' },
+        { label: 'Option 2', href: '/' },
+        { label: 'Option 3', href: '/' },
+        { label: 'Option 4', href: '/' },
+      ],
+    },
+    {
+      id: 'dropdown-2',
+      buttonText:'Color',
+      content: 'Content for Color',
+      options: [
+        { label: 'Option A', href: '/' },
+        { label: 'Option B', href: '/' },
+        { label: 'Option C', href: '/' },
+        { label: 'Option D', href: '/' },
+        { label: 'Option A', href: '/' },
+        { label: 'Option B', href: '/' },
+        { label: 'Option C', href: '/' },
+        { label: 'Option D', href: '/' },
+      ],
+    },
+  ];
+
+  let currentDropdownIndex = 0; // Initially show content for the first dropdown
+
+  function toggleDropdown(index) {
+    currentDropdownIndex = index;
+  }
+
+
+
+  const handleClick = () => {
+    alert("Clicked");
+  };
 
   let imageUrl = "";
   let processedImage = null;
@@ -72,6 +130,13 @@
     concat += "...";
     return concat;
   };
+
+ 
+   
+
+  
+
+
 </script>
 
 <main>
@@ -112,26 +177,53 @@
         <p>{showFiles(value)}</p>
       {/if}
     </Dropzone>
-    <div class="flex flex-row mx-auto justify-center py-6 gap-3">
-      {#if imageUrl}
-        <div class="flexflex-col transition-all">
-          <h2>Original Image</h2>
-          <img class="w-48 rounded-lg" src={imageUrl} alt="Uploaded Image" />
+   
+    <div class="flex flex-row mx-auto justify-center py-60 gap-3">
+      <div class="flex flex-col transition-all ">
+        <h2>loading...</h2>
+      </div>
+      <div class="flex flex-row gap-10 border-2 rounded-md	 border-[#EB4F27]">
+        <div class="flex flex-row transition-all">
+          <img class="max-w-lg	 rounded-lg" src="before.png" alt="New Image Here" />
         </div>
-      {/if}
-      {#if processedImage}
-        <div class="flex flex-col transition-all">
-          <h2>Processed Image</h2>
-          <img
-            class="w-48 rounded-lg"
-            src={processedImage}
-            alt="Processed Image"
-          />
-          <Button class="mt-1.5 ml-1.5" on:click={downloadImage}
-            >Download Processed Image</Button
-          >
+
+
+        <div class="flex flex-col">
+          <div class="flex-row flex">
+            {#each dropdowns as dropdown, index}
+              <div class="relative mt-4" id={dropdown.id}>
+                <button
+                  class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
+                  aria-haspopup="true"
+                  aria-expanded={index === currentDropdownIndex}
+                  on:click={() => toggleDropdown(index)}
+                >
+                  {dropdown.buttonText}
+                </button>
+                
+                {#if index === currentDropdownIndex}
+                  <div
+                    class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
+                    aria-hidden={index !== currentDropdownIndex}
+                  >
+                    {#each dropdown.options as option}
+                      <a href={option.href} class="flex flex-center px-6 py-3 mr-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                        {option.label}
+                      </a>
+                    {/each}
+                  </div>
+                {/if}
+              </div>
+            {/each}
+          </div>
         </div>
-      {/if}
+
+          
+          <Button class="mt-20  " on:click={downloadImage}>Download Processed Image</Button>
+          
+        </div>
+      </div>
     </div>
-  </div>
+
+    
 </main>

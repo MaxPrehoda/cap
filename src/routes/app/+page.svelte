@@ -12,23 +12,22 @@
 
   let photoDropdown = {
     options: [
-      {
-        label: "Option 1",
-        href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        label: "Option 2",
-        href: "https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        label: "Option 3",
-        href: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      { label: "Option 4", href: "/" },
-      { label: "Option 1", href: "/" },
-      { label: "Option 2", href: "/" },
-      { label: "Option 3", href: "/" },
-      { label: "Option 4", href: "/" },
+      { label: "Option 1", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 2", href: "https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+      { label: "Option 3", href: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 4", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 5", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 6", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 7", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 8", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 9", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 10", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 11", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 12", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 13", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 14", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 15", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { label: "Option 16", href: "https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     ],
   };
 
@@ -176,9 +175,9 @@
         <h2>loading...</h2>
       </div>
       <div
-        class="flex flex-row gap-10 border-2 rounded-md border-[#EB4F27] p-4"
+        class="flex flex-row gap-10 border-2 rounded-lg h-fit w-fit  bg-[#F9FAFB] p-4"
       >
-        <div class="flex flex-row transition-all">
+        <div class="flex flex-row transition-all ">
           <img
             class="max-w-lg rounded-lg"
             src="before.png"
@@ -186,20 +185,29 @@
           />
         </div>
 
-        <div class="flex flex-col">
-          <div class="flex-row flex">
+        <div class="">
+          
+          
             <div class="relative mt-4">
               <button
-                class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
+                class="bg-[#FFFFFF] text-black p-2 px-8 rounded-[20px] mr-11"
                 aria-haspopup="true"
                 aria-expanded={photosExpanded}
                 on:click={() => handlePhotosDropdown()}
               >
                 Photos
               </button>
+              
+              
+
+              
+              
+              
+              
+              
               {#if photosExpanded}
                 <div
-                  class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
+                  class="absolute mt-2 w-96 rounded-md shadow-lg overflow-y-auto max-h-60 bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 "
                 >
                   {#each photoDropdown.options as option}
                     <a
@@ -209,27 +217,39 @@
                     >
                       <img class="" src={option.href} alt="" />
                     </a>
+                    
                   {/each}
-                </div>
+                  
+                  
+              </div>
+                
               {/if}
             </div>
-          </div>
+          
         </div>
-        <div class="flex flex-col">
-          <div class="flex-row flex">
+         
+          <div class="">
             <div class="relative mt-4">
               <button
-                class="bg-[#EB4F27] text-white p-2 rounded-[10px] mr-11"
+                class="bg-[#FFFFFF] text-black p-2 px-8 rounded-[20px] mr-11"
                 aria-haspopup="true"
                 aria-expanded={colorsExpanded}
                 on:click={() => handlePhotosDropdown()}
               >
                 Colors
               </button>
+            </div>
+
+              
+
+              
+            
               {#if colorsExpanded}
                 <div
-                  class="absolute mt-2 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
+                  class="absolute mt-2 w-96 rounded-md shadow-lg overflow-y-auto max-h-60 bg-white ring-1 ring-black ring-opacity-5 grid grid-cols-4 gap-2 h-96"
                 >
+
+                
                   {#each photoDropdown.options as option}
                     <a
                       href={option.href}
@@ -240,14 +260,55 @@
                     </a>
                   {/each}
                 </div>
+                
               {/if}
-            </div>
+            
           </div>
-        </div>
 
-        <Button class="mt-20  " on:click={downloadImage}
-          >Download Processed Image</Button
-        >
+          <div class="flex flex-col mt-6 rounded-full ">
+            <button class=" bg-[#8B3DFF] text-white p-2 px-8 rounded-full">
+              Canva
+            </button>
+
+            <button class=" bg-[#FF0000] mt-10 text-white p-2 px-8 rounded-full">
+              Adobe
+            </button>
+
+            <button class=" bg-[#215272] mt-10 text-white p-2 px-8 rounded-full">
+              Photoshop
+            </button>
+
+            <hr class="mt-11">
+
+            <div class=" self-end">
+              <button class=" bg-[#EDF0F2] mt-10 text-black p-2 px-8 rounded-full">
+                Reset
+              </button>
+              
+       
+        
+            <button class="bg-[#0F70E6] text-white p-2 px-8 rounded-[20px]">
+              Download
+            </button>
+  
+            </div>
+  
+
+          </div>
+
+          
+
+          
+         
+              
+       
+       
+        
+
+     
+
+        
+
       </div>
     </div>
   </div>

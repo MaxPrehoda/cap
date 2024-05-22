@@ -1,6 +1,5 @@
 <script>
-  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from 'flowbite-svelte';
-  import { CardPlaceholder } from "flowbite-svelte";
+
 </script>
 
 <div class="h-full w-full relative">
@@ -91,10 +90,4 @@
   </div>
 </div>
 
-<Footer footerType="socialmedia">
-  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <div class="sm:flex sm:items-center sm:justify-between">
-    <img src="/" alt="logo">
-    <FooterCopyright href="/" by="CaptureQuest™" />
-  </div>
-</Footer>
+

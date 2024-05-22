@@ -1,17 +1,20 @@
-const config = {
+module.exports = {
   content: [
     "./src/**/*.{html,js,svelte,ts}",
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
-
-  plugins: [require("flowbite/plugin")],
-
-  darkMode: "selector",
-
   theme: {
     extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX( -50%)' }, // Adjust to match the total width of one set
+        },
+      },
       colors: {
-        // flowbite-svelte
         primary: {
           50: "#FFF5F2",
           100: "#FFF1EE",
@@ -27,6 +30,7 @@ const config = {
       },
     },
   },
+  plugins: [require("flowbite/plugin")],
+  darkMode: "class",
 };
 
-module.exports = config;

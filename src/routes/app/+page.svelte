@@ -5,6 +5,7 @@
   let imageUrl = "";
   let processedImage = null;
   let value = [];
+  let color = "#FFFFFF";
   const dropHandle = async (event) => {
     value = [];
     event.preventDefault();
@@ -26,6 +27,8 @@
     imageUrl = URL.createObjectURL(file);
     const formData = new FormData();
     formData.append("image_file", file);
+    formData.append("bg_color" , color )
+    formData.append("size", "auto")
     try {
       const response = await axios.post(
         "https://api.remove.bg/v1.0/removebg",

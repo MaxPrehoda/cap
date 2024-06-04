@@ -39,18 +39,30 @@
   }
 </script>
 
+<svelte:head>
+  <title>Capture Quest | About</title>
+  <meta name="description" content="About" />
+  <meta
+    name="keywords"
+    content="Screenshot removal, background removal, image editing, image cleaning, About Capture Quest, "
+  />
+</svelte:head>
 
 <div class="h-full w-full relative">
   <div
     class="relative flex-col flex gap-5 text-center py-24 font-bold text-6xl"
   >
-    <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
+    <div
+      class="absolute transform-gpu blur-[68px] pointer-events-none"
+      aria-hidden="true"
+    >
       <div
         class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
-        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"/>
+        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
+      />
     </div>
-    <div>Uncover something hidden </div>
-    
+    <h1>Uncover something hidden</h1>
+    <h2 class="hidden">about capture quest</h2>
   </div>
 </div>
 
@@ -58,7 +70,7 @@
   <button
     on:click={() => changeImage(1)}
     class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black hover:text-yellow-500"
-    class:bg-[#EDF0F2] = {activeButton === 1}
+    class:bg-[#EDF0F2]={activeButton === 1}
     class:bg-[#white]={activeButton !== 1}
   >
     People
@@ -66,7 +78,7 @@
   <button
     on:click={() => changeImage(2)}
     class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black hover:text-yellow-500"
-    class:bg-[#EDF0F2]= {activeButton === 2}
+    class:bg-[#EDF0F2]={activeButton === 2}
     class:bg-[#white]={activeButton !== 2}
   >
     Cars
@@ -74,7 +86,7 @@
   <button
     on:click={() => changeImage(3)}
     class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black hover:text-yellow-500"
-    class:bg-[#EDF0F2]= {activeButton === 3}
+    class:bg-[#EDF0F2]={activeButton === 3}
     class:bg-[#white]={activeButton !== 3}
   >
     Animals
@@ -82,20 +94,14 @@
   <button
     on:click={() => changeImage(4)}
     class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black hover:text-yellow-500"
-    class:bg-[#EDF0F2]= {activeButton === 4}
+    class:bg-[#EDF0F2]={activeButton === 4}
     class:bg-[#white]={activeButton !== 4}
   >
     Logo
   </button>
 </div>
 
-
-
-
-
-
-
-<div class="relative w-[700px] h-[470px] mx-auto mt-6">
+<div class="relative w-[700px] h-[470px] mx-auto mt-6 shadow-lg rounded-lg">
   <div class="absolute inset-0">
     <img
       src={beforeImage}
@@ -117,48 +123,42 @@
     class="absolute inset-0 flex items-center"
     on:mousemove={handleMouseMove}
   >
-    <div class="w-0.5 h-full bg-white relative" style="left: {position}%;"></div>
+    <div
+      class="w-0.5 h-full bg-white relative"
+      style="left: {position}%;"
+    ></div>
   </div>
 </div>
 
-
-<div class=" text-black flex flex-col lg:flex-row items-center mt-48 justify-center  pb-48 pt-11 gap-24">
-  <h1 class="text-4xl font-bold leading-10 tracking-tight mt-11 ">
-    Remove image background <br> automatically <br> 
-    <p class="font-semibold text-base mt-5 ">Upload image and get a clear transparent background</p>
+<div
+  class=" text-black flex flex-col lg:flex-row items-center mt-48 justify-center pb-48 pt-11 gap-24"
+>
+  <h1 class="text-4xl font-bold leading-10 tracking-tight mt-11">
+    Remove image background <br /> automatically <br />
+    <p class="font-semibold text-base mt-5">
+      Upload image and get a clear transparent background
+    </p>
   </h1>
-  <div class="h-80 w-4/12 rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:shadow-[0_3px_20px_0_rgb(166_163_239_/_50%)] hover:-translate-y-4 flex flex-col items-center justify-center">
-    <button class="inline-block px-5 py-4 rounded-full text-white text-xl  bg-[#007BFF]">Upload Image</button>
+  <div
+    class="h-80 w-4/12 rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:shadow-[0_3px_20px_0_rgb(166_163_239_/_50%)] transition-all ease-in-out hover:-translate-y-4 duration-500 flex flex-col items-center justify-center"
+  >
+    <button
+      class="inline-block px-5 py-4 rounded-full text-white text-xl bg-[#007BFF]"
+      >Upload Image</button
+    >
     <p class=" text-black mt-4">Or Drag and drop images</p>
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="bg-transparent">
-  <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
+  <div
+    class="absolute transform-gpu blur-[68px] opacity-80 pointer-events-none"
+    aria-hidden="true"
+  >
     <div
       class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
-      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"/>
+      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
+    />
   </div>
   <div class="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
     <div class="lg:grid lg:grid-cols-12 lg:gap-11">
@@ -218,5 +218,3 @@
     </div>
   </div>
 </div>
-
-

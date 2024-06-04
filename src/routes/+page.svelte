@@ -35,6 +35,8 @@
 
 </script>
 
+
+
 <div class="h-full w-full relative py-12">
   <div class="relative flex-col flex gap-5 text-center font-bold text-6xl">
     <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
@@ -49,7 +51,7 @@
       your creative output with ease
     </p>
   </div>
-  <div class="relative w-[600px] h-[370px] mx-auto mt-6">
+  <div class="relative w-[700px] h-[470px] mx-auto mt-6">
     <div class="absolute inset-0">
       <img
         src="https://www.slazzer.com/static/images/sample/png/demo-001.jpg"
@@ -152,36 +154,36 @@
 <div class="w-full inline-flex flex-nowrap overflow-hidden md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
   <ul class="flex animate-infinite-scroll items-center justify-center [&_li]:mx-4 [&_li]:md:mx-8 [&_img]:max-w-none">
     <li>
-      <img src="/gif.png" alt="gif" class="w-20 h-20" />
+      <img src="/gif.png" alt="gif" class="w-20 h-20 opacity-25" />
     </li>
     <li>
-      <img src="/heic.png" alt="heic" class="w-20 h-20" />
+      <img src="/heic.png" alt="heic" class="w-20 h-20 opacity-25" />
     </li>
     <li>
-      <img src="/jpeg.png" alt="jpeg" class="w-20 h-20" />
+      <img src="/jpeg.png" alt="jpeg" class="w-20 h-20 opacity-25" />
     </li>
     <li>
-      <img src="/png.png" alt="png" class="w-20 h-20" />
+      <img src="/png.png" alt="png" class="w-20 h-20 opacity-25" />
     </li>
     <li>
-      <img src="/svg.png" alt="svg" class="w-20 h-20" />
+      <img src="/svg.png" alt="svg" class="w-20 h-20 opacity-25" />
     </li>
     </ul>
     <ul class="flex animate-infinite-scroll items-center justify-center [&_li]:mx-4 [&_li]:md:mx-8 [&_img]:max-w-none" aria-hidden="true">
       <li>
-        <img src="/gif.png" alt="gif" class="w-20 h-20" />
+        <img src="/gif.png" alt="gif" class="w-20 h-20 opacity-25" />
       </li>
       <li>
-        <img src="/heic.png" alt="heic" class="w-20 h-20" />
+        <img src="/heic.png" alt="heic" class="w-20 h-20 opacity-25" />
       </li>
       <li>
-        <img src="/jpeg.png" alt="jpeg" class="w-20 h-20" />
+        <img src="/jpeg.png" alt="jpeg" class="w-20 h-20 opacity-25" />
       </li>
       <li>
-        <img src="/png.png" alt="png" class="w-20 h-20" />
+        <img src="/png.png" alt="png" class="w-20 h-20 opacity-25" />
       </li>
       <li>
-        <img src="/svg.png" alt="svg" class="w-20 h-20" />
+        <img src="/svg.png" alt="svg" class="w-20 h-20 opacity-25" />
       </li>
 
     </ul>
@@ -207,10 +209,10 @@
 
 
 
-<div class="flex flex-col lg:flex-row items-center justify-center h-96 ">
+<div class="flex flex-col lg:flex-row items-center mt-48 justify-center h-14 pb-48 pt-11">
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-    <div class="p-4 border-2 rounded-md shadow-lg ring-black ring-1 ring-opacity-5">
-      <div class="flex items-center mb-2">
+    <div class="group hover:bg-[#EB4F27] hover:ring-[#EB4F27] h-64 rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:shadow-[0_3px_20px_0_rgb(166_163_239_/_50%)] hover:-translate-y-4">
+      <div class="flex items-center mb-11">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -221,46 +223,94 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-upload mr-2"
+          class="lucide lucide-upload mr-2 group-hover:stroke-white"
         >
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
           <polyline points="17 8 12 3 7 8" />
           <line x1="12" x2="12" y1="3" y2="15" />
         </svg>
-        <h3 class="text-2xl font-bold">Upload image</h3>
+        <h3 class="group-hover:text-white text-2xl font-bold">Upload image</h3>
       </div>
-      <p class="text-gray-600">
+      <p class="group-hover:text-white text-gray-600 mb-11">
         For best results choose an image <br />
         where the subject has clear edges <br />
         with nothing overlapping.
       </p>
+      <div class="bg-[#EB4F27]  group-hover:bg-white rounded-full w-12 py-1 mt-auto flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right group-hover:stroke-black">
+          <path d="m9 18 6-6-6-6"/>
+        </svg>
+      </div>
     </div>
 
-    <div class="p-4 border-2 rounded-md shadow-lg ring-black ring-1 ring-opacity-5">
-      <div class="flex items-center mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-minus"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
-        <h3 class="text-2xl font-bold ml-2">Remove background</h3>
+    <div class="group hover:bg-[#EB4F27] hover:ring-[#EB4F27] h-64 rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:shadow-[0_3px_20px_0_rgb(166_163_239_/_50%)] hover:-translate-y-4">
+      <div class="flex items-center mb-11">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-badge-minus group-hover:stroke-white"
+        >
+          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+          <line x1="8" x2="16" y1="12" y2="12"/>
+        </svg>
+        <h3 class="group-hover:text-white text-2xl font-bold ml-2">Remove background</h3>
       </div>
-      <p class="text-gray-600">
-        upload your image to automatically <br />
+      <p class="group-hover:text-white text-gray-600">
+        Upload your image to automatically <br />
         remove the background in an <br />
         instant.
       </p>
+      <div class="bg-[#EB4F27]  group-hover:bg-white rounded-full w-12 py-1 mt-auto flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right group-hover:stroke-black">
+          <path d="m9 18 6-6-6-6"/>
+        </svg>
+      </div>
     </div>
 
-    <div class="p-4 border-2 rounded-md shadow-lg ring-black ring-1 ring-opacity-5">
-      <div class="flex items-center mb-2 ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-        <h3 class="text-2xl font-bold ml-2">Download image</h3>
+    <div class="group hover:bg-[#EB4F27] hover:ring-[#EB4F27] h-64 rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:drop-shadow-xl hover:-translate-y-4">
+      <div class="flex items-center mb-11">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-download group-hover:stroke-white"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" x2="12" y1="15" y2="3"/>
+        </svg>
+        <h3 class="group-hover:text-white text-2xl font-bold ml-2">Download image</h3>
       </div>
-      <p class="text-gray-600">
+      <p class="group-hover:text-white text-gray-600">
         Download your new image as a PNG <br />
         file with a transparent background <br />
-        to save, share or keep editing
+        to save, share or keep editing.
       </p>
+      <div class=" bg-[#EB4F27]  group-hover:bg-white hover:bg-black  rounded-full w-12 py-1 mt-auto flex justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-black lucide lucide-chevron-right">
+          <path d="m9 18 6-6-6-6"/>
+        </svg>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+
 
 
 

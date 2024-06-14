@@ -1,4 +1,4 @@
-import { Stripe } from "stripe";
+/*import { Stripe } from "Stripe";
 import { redirect } from "@sveltejs/kit";
 
 const stripe = new Stripe("sk_test");

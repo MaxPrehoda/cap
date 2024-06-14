@@ -79,6 +79,7 @@
       on:change={handleChange}
       class="w-1/2 mx-auto"
     >
+    
       <svg
         aria-hidden="true"
         class="mb-3 w-10 h-10 text-gray-400"
@@ -94,6 +95,9 @@
           d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
         />
       </svg>
+      <button class="inline-block px-5 py-4 my-4 rounded-full text-white text-xl bg-[#007BFF]">
+        Upload Image
+      </button>
       {#if value.length === 0}
         <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
           <span class="font-semibold">Click to upload</span> or drag and drop

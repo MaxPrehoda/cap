@@ -37,6 +37,11 @@
         afterImage = "people.png";
     }
   }
+
+  function toggleTextColor(event) {
+    const summaryElement = event.currentTarget;
+    summaryElement.classList.toggle('text-[#FFFF00]');
+  }
 </script>
 
 <svelte:head>
@@ -127,6 +132,141 @@
     </div>
   </div>
 
+ 
+<div class="max-w-screen-xl mx-auto px-5 ">
+  <div class="flex flex-col items-center">
+    <h2 class="font-bold text-white text-5xl mt-5 tracking-tight">
+      FAQ
+    </h2>
+    <p class="text-white text-xl mt-3">
+      Frequently asked questions
+    </p>
+  </div>
+  <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex justify-between items-center text-white font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> What are the pricing options for CaptureQuest?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          CaptureQuest offers a free plan with 3 free background removals per day, as well as a Pro plan for $15 per month that provides unlimited background removals.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> How does billing work?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          We offers a variety of billing options, including monthly subscription plans, Payment is typically made through a credit card or other secure online payment method.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> Can I get a refund for my subscription?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          We don't offer a refund, we give free trial to make sure your satisfied with your subscription.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> How do I cancel my subscription?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          To cancel your subscription, you can log in to your account and navigate to the subscription management page. From there, you should be able to cancel your subscription and stop future billing.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> Can I try this platform for free?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          Yes We offers a free trial of its platform for a limited time. During the trial period, you will have access to a limited set of features and functionality, but you will not be charged.
+        </p>
+      </details>
+    </div>
+
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> How do I contact support?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          If you need help with the platform or have any other questions, you can contact the company's support team by submitting a support request through the website or by emailing support@CaptureQuest.com.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> Do you offer any discounts or promotions?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          We may offer discounts or promotions from time to time. To stay up-to-date on the latest deals and special offers, you can sign up for the company's newsletter or follow us on social media.
+        </p>
+      </details>
+    </div>
+    <div class="py-5">
+      <details class="group">
+        <summary class="flex text-white justify-between items-center font-medium cursor-pointer list-none" on:click={toggleTextColor}>
+          <span> How do we compare to other similar services?</span>
+          <span class="transition group-open:rotate-180">
+            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p class="text-white mt-3 group-open:animate-fadeIn">
+          This platform is a highly reliable and feature-rich service that offers a wide range of tools and functionality. It is competitively priced and offers a variety of billing options to suit different needs and budgets.
+        </p>
+      </details>
+    </div>
+  </div>
+</div>
+ 
   
     
 
@@ -192,76 +332,4 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  <div class="mx-auto  max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-11">
-      <div class="lg:col-span-5">
-        <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-          Frequently asked questions
-        </h2>
-        <p class="mt-4 text-base leading-7 text-gray-600">
-          Can't find the answer you're looking for? Reach out to our <a
-            href="#"
-            class="font-semibold text-orange-500 hover:text-indigo-500"
-            >customer support</a
-          > team.
-        </p>
-      </div>
-      <div class="mt-10 lg:col-span-7 lg:mt-0">
-        <dl>
-          <div class="mb-6">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              What are the pricing options for CaptureQuest?
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              CaptureQuest offers a free plan with 3 free background removals
-              per day, as well as a Pro plan for $15 per month that provides
-              unlimited background removals
-            </dd>
-          </div>
-        </dl>
-        <dl>
-          <div class="mb-6">
-            <dt class="text-base font-semibold leading-7 text-gray-900 mt-3">
-              What are the key features of CaptureQuest?
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              CaptureQuest is a powerful image editing tool that allows you to
-              easily remove backgrounds from any image and replace them with a
-              new background. Key features include fast and efficient background
-              removal, free and paid pricing plans, competitive pricing compared
-              to similar apps, and an easy-to-use interface.
-            </dd>
-          </div>
-        </dl>
-        <dl>
-          <div class="mb-6">
-            <dt class="text-base font-semibold leading-7 text-gray-900 mt-3">
-              How accurate are the background removal results typically?
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              The accuracy of background removal can vary depending on the tool
-              used and the complexity of the image. CaptureQuest is quite
-              accurate, even handling tricky elements like hair or transparent
-              objects. CaptureQuest is has a free plan so you can give it a try.
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
 

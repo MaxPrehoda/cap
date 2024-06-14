@@ -1,17 +1,15 @@
 import { Stripe } from "stripe";
-import { redirect } from "@sveltejs/kit";
+import { error, redirect } from "@sveltejs/kit";
 
-const stripe = new Stripe("sk_test");
+export const actions = {
+  subscribepro: async ({ locals, request }) => {
+    const stripe = new Stripe(import.meta.env.VITE_STRIPE_KEY);
 
-export async function load() {}
-
-/*
-checkout: async ({ locals, request }) => {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: [
         {
-          price: "price_1OhbZ4AgGZYlcp7ia59OLLut",
+          price: "price_1PQaJkAy7t1y2bsya3oBeFIA",
           quantity: 1,
         },
       ],
@@ -20,9 +18,10 @@ checkout: async ({ locals, request }) => {
       cancel_url: "http://localhost:5173/",
     });
 
-    if (session.url) {
-      redirect(303, session.url);
-    } else {
-      throw new Error("Stripe Checkout session URL is missing");
+    if (!session) {
+      throw error(500, "Something went wrong");
+    } else if (session.url) {
+      throw redirect(303, session.url);
     }
-  },*/
+  },
+};

@@ -27,8 +27,10 @@
   },
   "type": "module",
   "dependencies": {
+    "@imgly/background-removal": "^1.5.3",
     "@neoconfetti/svelte": "^2.2.1",
     "axios": "^1.6.8",
+    "opencv.js": "^1.2.1",
     "particlesjs": "^2.2.3",
     "stripe": "^15.10.0"
   }

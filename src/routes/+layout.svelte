@@ -17,30 +17,40 @@
       <div>
         <img class="w-9 h-9 inline-block" src="/icon.png" alt="" />
       </div>
-
-      <span class="ml-3 text-xl">CaptureQuest</span>
+      <a href="/">
+        <div class=" font-semibold text-xl cursor-pointer">CaptureQuest</div>
+      </a>
     </a>
 
     <!-- Navigation Links for Large Screens -->
     <nav
-      class="hidden md:flex flex-wrap items-center gap-6 scroll-smooth text-base justify-center space-x-5"
+      class="hidden md:flex flex-wrap items-center gap-6 scroll-smooth text-base cursor-pointer justify-center space-x-5"
     >
-      <a id="" href="#Feautres" class="hover:text-gray-900 scroll-smooth"
-        >Features</a
+      <a
+        href="#Feautres"
+        class="hover:text-gray-900 scroll-smooth cursor-pointer">Features</a
       >
-      <a href="#howtouse" class="hover:text-gray-900 scroll-smooth"
-        >How to use</a
+      <a
+        href="#howtouse"
+        class="hover:text-gray-900 scroll-smooth cursor-pointer">How to use</a
       >
-      <a href="#faq" class="hover:text-gray-900 scroll-smooth">Faqs</a>
-      <a href="#pricing" class="hover:text-gray-900 scroll-smooth">Pricing</a>
+      <a
+        href="#pricing"
+        class="hover:text-gray-900 scroll-smooth cursor-pointer">Pricing</a
+      >
+      <a href="#faq" class="hover:text-gray-900 scroll-smooth cursor-pointer"
+        >Faqs</a
+      >
     </nav>
 
     <!-- Get Started Button and Hamburger Menu Icon -->
     <div class="flex items-center space-x-3">
-      <button
-        class=" flex justify-center items-center px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer md:mt-0"
-        >Get Started</button
-      >
+      <a href="/app">
+        <button
+          class=" flex justify-center items-center px-6 py-3 rounded-full font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer md:mt-0"
+          >Get Started</button
+        >
+      </a>
       <button
         class="md:hidden ml-3 p-2 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
         on:click={toggleMenu}

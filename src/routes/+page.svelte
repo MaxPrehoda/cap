@@ -117,95 +117,191 @@
   }
 </script>
 
-<!-- <div class="  bg-gradient-to-b from-zinc-900 via-zinc-600 to-zinc-800 h-full w-full  relative py-12">
-  <div class="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"></div>
-  <div class="relative flex-col flex  text-center font-bold text-[40px] md:text-[64px] lg:text-[82px]">
-    <div class="absolute transform-gpu blur-[68px] pointer-events-none" aria-hidden="true">
-      <div
-        class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-amber-200 to-yellow-500 opacity-30"
-        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-      />
-    </div>
-    <div class="text-white" >Remove Background</div>
-    <div class="text-white">From Images For
-      <span
-      class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#FFFF00] relative inline-block text-white font-bold text-[40px] md:text-[64px] lg:text-[82px] bg-gradient-to-r bg-clip-text text-transparent">
-      <span class="relative text-black">Free</span>
-    </span>
-      
-    </div>
-    
-    <p class="text-[16px] lg:text-[20px] text-white  mt-5">
-      Introducing CaptureQuest, a platform designed to help you create stunning visuals, <br> promote your product, and enhance your images.
-    </p>
-  </div>
-
+<div class="mt-11">
   <div
-  class="flex justify-center justify-items-center w-screen h-fit cursor-pointer mt-9"
->
-  <button 
-    class="px-11 py-3 rounded-full whitespace-nowrap flex items-center text-black bg-white hover:bg-black hover:text-white hover:border-white border-white hover:border-2 cursor-pointer "
+    class="absolute transform-gpu blur-[68px] pointer-events-none"
+    aria-hidden="true"
   >
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
-  </svg>
-   Get started</button
+    <div
+      class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-purple-500 to-pink-500 opacity-30"
+      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
+    ></div>
+  </div>
+  <div
+    class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6"
   >
+    <div class="flex flex-col items-center w-full md:flex-row md:w-[60%]">
+      <div class="max-w-2xl md:mx-12 md:order-2">
+        <h1
+          class="text-[36px] md:text-[48px] lg:text-[60px] font-extrabold text-[#0F172A]"
+        >
+          <span
+            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-[36px] md:text-[48px] lg:text-[60px]"
+            >Remove Background</span
+          > From Images For Free
+        </h1>
+        <p class="mt-4 text-[#94A3B8] text-lg">
+          Introducing CaptureQuest, a platform designed to help you create
+          stunning visuals, promote your product, and enhance your images.
+        </p>
+        <div class="mt-6 flex justify-center md:justify-start">
+          <a
+            href="#"
+            class="px-3 py-2 font-semibold text-center duration-200 rounded-md md:inline text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
+            >Try For Free</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="max-w-3xl h-[300px] md:h-[400px] lg:h-[450px] w-full relative mx-auto md:w-[40%]"
+    >
+      <div class="max-w-screen-lg mx-auto h-full">
+        <iframe
+          class="video h-full w-full flex items-center rounded-xl overflow-hidden dark:border dark:border-slate-800 p-4 md:p-6 lg:p-10 relative"
+          src="https://www.youtube.com/embed/2vWh2kaeZkI?si=XvKXPSJfLdLSlo_t"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="flex flex-col mt-11 py-4">
+  <h1 class="text-center font-bold py-3 text-[30px] lg:text-[60px]">
+    Screenshot Background Removal
+  </h1>
+  <Dropzone
+    id="dropzone"
+    on:drop={dropHandle}
+    on:dragover={(event) => {
+      event.preventDefault();
+    }}
+    on:change={handleChange}
+    class="w-full max-w-[960px] h-80 md:h-96 lg:h-[500px] mx-auto px-4 py-6 border-dashed border-2 border-gray-300 rounded-md flex flex-col items-center justify-center"
+  >
+    <svg
+      aria-hidden="true"
+      class="mb-3 w-10 h-10 text-gray-400 mx-auto"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+      />
+    </svg>
 
+    <button
+      class="inline-block px-8 md:px-16 py-2 my-4 rounded-full font-semibold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 inline-block"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+        />
+      </svg>
 
-  <div class="flex justify-center mt-20 ">
-    <iframe class="flex justify-center w-[450px] h-[250px] lg:w-[1155px] lg:h-[700px] md:w-[950px] md:h-[535px] sm:w-[724px] sm:h-[400px]  "   width="1155" height="700" src="https://www.youtube.com/embed/2vWh2kaeZkI?si=XvKXPSJfLdLSlo_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      Upload Image
+    </button>
+    {#if value.length === 0}
+      <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-center">
+        <span class="font-semibold">Click to upload</span> or drag and drop
+      </p>
+      <p class="text-xs text-gray-500 dark:text-gray-400 text-center">
+        SVG, PNG, JPG or GIF (MAX. 800x400px)
+      </p>
+    {:else}
+      <p class="text-center">{showFiles(value)}</p>
+    {/if}
+  </Dropzone>
+  <div
+    id="Feautres"
+    class="flex flex-col md:flex-row mx-auto justify-center py-6"
+  >
+    {#if imageUrl}
+      <div class="flex flex-col items-center md:mr-4 mb-4 md:mb-0">
+        <h2>Original Image</h2>
+        <img class="w-48" src={imageUrl} alt="Uploaded Image" />
+      </div>
+    {/if}
+    {#if processedImage}
+      <div class="flex flex-col items-center md:ml-4">
+        <h2>Processed Image</h2>
+        <img class="w-48" src={processedImage} alt="Processed Image" />
+        <button class="mt-4" on:click={downloadImage}
+          >Download Processed Image</button
+        >
+      </div>
+    {/if}
   </div>
+</div>
 
- 
-  <div class="flex justify-center text-white text-[32px] md:text-[48px] mt-20">
+<div>
+  <div
+    class="flex justify-center text-black font-bold text-[32px] md:text-[48px] mt-20"
+  >
     <h1>Uncover Something hidden</h1>
   </div>
 
   <div class="flex justify-center text-[14px] sm:text-[16px] gap-11 m-20">
     <button
       on:click={() => changeImage(1)}
-      class="cursor-pointer px-6 py-2 rounded-full font-semibold  text-white hover:text-[#FFFF00]"
-      class:bg-[#000000] = {activeButton === 1}
+      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
+      class:bg-[#CBD5E1]={activeButton === 1}
       class:bg-[#white]={activeButton !== 1}
     >
       People
     </button>
     <button
       on:click={() => changeImage(2)}
-      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-white hover:text-[#FFFF00]"
-      class:bg-[#000000]= {activeButton === 2}
+      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
+      class:bg-[#CBD5E1]={activeButton === 2}
       class:bg-[#white]={activeButton !== 2}
     >
       Cars
     </button>
     <button
       on:click={() => changeImage(3)}
-      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-white hover:text-[#FFFF00]"
-      class:bg-[#000000]= {activeButton === 3}
+      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
+      class:bg-[#CBD5E1]={activeButton === 3}
       class:bg-[#white]={activeButton !== 3}
     >
       Animals
     </button>
     <button
       on:click={() => changeImage(4)}
-      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-white hover:text-[#FFFF00]"
-      class:bg-[#000000]= {activeButton === 4}
+      class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
+      class:bg-[#CBD5E1]={activeButton === 4}
       class:bg-[#white]={activeButton !== 4}
     >
       Logo
     </button>
-    
   </div>
   <div class="flex justify-center">
-    <hr class="w-5/12 border-t-2  mb-11" />
-
+    <hr class="w-5/12 border-t-2 mb-11" />
   </div>
- 
-  
-  <div class="relative  w-[450px] h-[250px] lg:w-[1000px] lg:h-[535px] md:w-[950px] md:h-[535px] sm:w-[724px] sm:h-[400px]        mx-auto mt-6 shadow-lg rounded-lg">
+
+  <div
+    class="relative w-[450px] h-[250px] lg:w-[1000px] lg:h-[535px] md:w-[950px] md:h-[535px] sm:w-[724px] sm:h-[400px] mx-auto mt-6 shadow-lg rounded-lg"
+  >
     <div class="absolute inset-0">
       <img
         src={beforeImage}
@@ -233,309 +329,15 @@
       ></div>
     </div>
   </div>
-
-
-  <div class="py-16 scroll-smooth">
-    <div class="container mx-auto flex flex-col md:flex-row justify-around items-start space-y-12 md:space-y-0 md:space-x-6">
-      <div class="text-center text-white w-full md:w-1/3 relative">
-        <div class="absolute top-0 w-full h-[1px] bg-white"></div>
-        <h2 class="text-[64px] font-bold mt-4 mb-4 relative z-10">Precision</h2>
-        <p class="text-[14px]">Achieve flawless background removal with our robust software. Perfect for professional designers and photographers.</p>
-      </div>
-      <div class="text-center text-white w-full md:w-1/3 relative">
-        <div class="absolute top-0 w-full h-[1px] bg-white"></div>
-        <h2 class="text-[64px] font-bold mt-4 mb-4 relative z-10">Seamless</h2>
-        <p class="text-[14px">Seamlessly integrate our background removal solution into your workflow. No hassle, just results.</p>
-      </div>
-      <div class="text-center text-white w-full md:w-1/3 relative">
-        <div class="absolute top-0 w-full h-[1px] bg-white"></div>
-        <h2 class="text-[64px] font-bold mt-4 mb-4 relative z-10">Reliable</h2>
-        <p class="text-[14px]">Dependable and consistent – our software ensures precise background removal every time.
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
 
-
-  <div
-class="flex justify-center justify-items-center w-screen h-fit scroll-smooth cursor-pointer mt-9"
->
-<button id="Explore" 
-  class="px-10 py-3 rounded-full text-[20px] whitespace-nowrap scroll-smooth flex items-center text-white bg-black hover:bg-white hover:text-black hover:border-black border-white hover:border-2 cursor-pointer "
->
- Explore CaptureQuest</button
->
-</div>
-
-
-
-
-<div class="h-full w-full relative">
-  <div
-    class="relative flex-col flex gap-5 text-center py-24 font-bold text-6xl"
-  >
-    <div>
-
-      <div class="absolute transform-gpu blur-[68px] pointer-events-none" aria-hidden="true">
-        <div
-          class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-amber-200 to-yellow-500 opacity-30"
-          style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-        />
-      </div>
-      <span
-        class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#FFFF00] relative inline-block text-white font-bold text-[50px] lg:text-[64px] bg-gradient-to-r bg-clip-text text-transparent">
-        <span class="relative text-black ">Compatible </span>
-        </span>
-        <p class="inline-block text-[50px] lg:text-[64px] ">with</p>
-    </div>
-    <div class="text-[50px] lg:text-[64px]">most file types</div>
-  </div>
-</div>
-
-<div
-  class="mt-16 md:mt-0 flex flex-col items-center gap-12 max-w-7xl mx-auto w-full"
->
-  <div
-    class="w-full inline-flex flex-nowrap overflow-hidden md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
-  >
-    <ul
-      class="flex animate-infinite-scroll items-center justify-center [&_li]:mx-4 [&_li]:md:mx-8 [&_img]:max-w-none"
-    >
-      <li>
-        <img src="/gif.png" alt="gif" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/heic.png" alt="heic" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/jpeg.png" alt="jpeg" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/png.png" alt="png" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/svg.png" alt="svg" class="w-20 h-20 opacity-25" />
-      </li>
-    </ul>
-    <ul
-      class="flex animate-infinite-scroll items-center justify-center [&_li]:mx-4 [&_li]:md:mx-8 [&_img]:max-w-none"
-      aria-hidden="true"
-    >
-      <li>
-        <img src="/gif.png" alt="gif" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/heic.png" alt="heic" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/jpeg.png" alt="jpeg" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/png.png" alt="png" class="w-20 h-20 opacity-25" />
-      </li>
-      <li>
-        <img src="/svg.png" alt="svg" class="w-20 h-20 opacity-25" />
-      </li>
-    </ul>
-  </div>
-</div> -->
-
-<div class="mt-11">
-  <div
-    class="absolute transform-gpu blur-[68px] pointer-events-none"
-    aria-hidden="true"
-  >
-    <div
-      class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-amber-200 to-yellow-500 opacity-30"
-      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-    />
-  </div>
-  <div
-    class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6"
-  >
-    <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
-      <div class="max-w-2xl md:mx-12 md:order-2">
-        <h1 class="text-[72px] font-extrabold text-[#0F172A] md:text-[60px]">
-          <span
-            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
-            >Remove Background</span
-          > From Images For Free
-        </h1>
-        <p class="mt-4 text-[#94A3B8] text-lg">
-          Introducing CaptureQuest, a platform designed to help you create
-          stunning visuals, promote your product, and enhance your images.
-        </p>
-        <div class="mt-6">
-          <a
-            href="#"
-            class="block px-3 py-2 font-semibold text-center duration-200 rounded-md md:inline text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-            >Try For Free</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="flex items-center justify-center w-full h-96 md:w-1/2">
-      <div class="flex justify-center mt-20">
-        <iframe
-          class="flex justify-center w-[450px] h-[250px] rounded-3xl lg:w-[768px] lg:h-[548px] md:w-[768px] md:h-[548px] sm:w-[724px] sm:h-[400px]"
-          width="768"
-          height="548"
-          src="https://www.youtube.com/embed/2vWh2kaeZkI?si=XvKXPSJfLdLSlo_t"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col mt-36 py-4">
-  <h1 class="text-center py-3">Screenshot Background Removal</h1>
-  <Dropzone
-    id="dropzone"
-    on:drop={dropHandle}
-    on:dragover={(event) => {
-      event.preventDefault();
-    }}
-    on:change={handleChange}
-    class="w-[960px] h-[500px] mx-auto"
-  >
-    <svg
-      aria-hidden="true"
-      class="mb-3 w-10 h-10 text-gray-400"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-      />
-    </svg>
-    <button
-      class="inline-block px-16 py-2 my-4 rounded-full font-semibold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-    >
-      Upload Image
-    </button>
-    {#if value.length === 0}
-      <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-        <span class="font-semibold">Click to upload</span> or drag and drop
-      </p>
-      <p class="text-xs text-gray-500 dark:text-gray-400">
-        SVG, PNG, JPG or GIF (MAX. 800x400px)
-      </p>
-    {:else}
-      <p>{showFiles(value)}</p>
-    {/if}
-  </Dropzone>
-  <div class="flex flex-row mx-auto justify-center py-6">
-    {#if imageUrl}
-      <div class="flex flex-col">
-        <h2>Original Image</h2>
-        <img class="w-48" src={imageUrl} alt="Uploaded Image" />
-      </div>
-    {/if}
-    {#if processedImage}
-      <div class="flex flex-col">
-        <h2>Processed Image</h2>
-        <img class="w-48" src={processedImage} alt="Processed Image" />
-        <button on:click={downloadImage}>Download Processed Image</button>
-      </div>
-    {/if}
-  </div>
-
-  <div class="  ">
-    <div
-      id="Feautres"
-      class="flex justify-center scroll-smooth text-black font-bold text-[60px] md:text-[48px] mt-20"
-    >
-      <h1>Uncover Something hidden</h1>
-    </div>
-
-    <div class="flex justify-center text-[14px] sm:text-[16px] gap-11 m-20">
-      <button
-        on:click={() => changeImage(1)}
-        class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
-        class:bg-[#CBD5E1]={activeButton === 1}
-        class:bg-[#white]={activeButton !== 1}
-      >
-        People
-      </button>
-      <button
-        on:click={() => changeImage(2)}
-        class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
-        class:bg-[#CBD5E1]={activeButton === 2}
-        class:bg-[#white]={activeButton !== 2}
-      >
-        Cars
-      </button>
-      <button
-        on:click={() => changeImage(3)}
-        class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
-        class:bg-[#CBD5E1]={activeButton === 3}
-        class:bg-[#white]={activeButton !== 3}
-      >
-        Animals
-      </button>
-      <button
-        on:click={() => changeImage(4)}
-        class="cursor-pointer px-6 py-2 rounded-full font-semibold text-black"
-        class:bg-[#CBD5E1]={activeButton === 4}
-        class:bg-[#white]={activeButton !== 4}
-      >
-        Logo
-      </button>
-    </div>
-    <div class="flex justify-center">
-      <hr class="w-5/12 border-t-2 mb-11" />
-    </div>
-
-    <div
-      class="relative w-[450px] h-[250px] lg:w-[1000px] lg:h-[535px] md:w-[950px] md:h-[535px] sm:w-[724px] sm:h-[400px] mx-auto mt-6 shadow-lg rounded-lg"
-    >
-      <div class="absolute inset-0">
-        <img
-          src={beforeImage}
-          alt="Before"
-          class="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-      <div
-        class="absolute bg-transparent inset-0 overflow-hidden"
-        style="width: {position}%;"
-      >
-        <img
-          src={afterImage}
-          alt="After"
-          class="w-full h-full object-cover rounded-lg"
-        />
-      </div>
-      <div
-        class="absolute inset-0 flex items-center"
-        on:mousemove={handleMouseMove}
-      >
-        <div
-          class="w-0.5 h-full bg-white relative"
-          style="left: {position}%;"
-        ></div>
-      </div>
-    </div>
-  </div>
-</div>
+<div id="howtouse"></div>
 
 <div
   class="flex flex-col lg:flex-row items-center mt-24 justify-center pb-24 pt-11"
 >
-  <div id="howtouse" class="container mx-auto px-6">
-    <h1 class="text-2xl lg:text-[60px] font-bold mb-14 text-center">
+  <div class="container mx-auto px-6">
+    <h1 class="text-[30px] lg:text-[60px] font-bold mb-14 text-center">
       Let's Get Started
     </h1>
 
@@ -740,30 +542,12 @@ class="flex justify-center justify-items-center w-screen h-fit scroll-smooth cur
           CaptureQuest runs 100% locally in your browser. We only keep your
           Images on our server when you save it.
         </p>
-      </a>
-
-      <!-- Box 8 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
-        <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
+        <div class="mt-6">
+          <a
+            href="#"
+            class="block px-3 py-2 font-semibold text-center duration-200 rounded-md md:inline text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
+            >Try For Free</a
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
-            />
-          </svg>
-          <div class="mr-2"></div>
-          <h3 class="text-lg font-bold">Share</h3>
         </div>
         <p class="text-[16px] text-[#64748B]">
           Share* directly on your socials
@@ -810,20 +594,17 @@ class="flex justify-center justify-items-center w-screen h-fit scroll-smooth cur
     </div>
   </div>
 </div>
-
 <div id="pricing" class="h-full scroll-smooth w-full relative">
   <div
-    class="relative flex-col flex gap-5 text-center py-24 font-bold text-6xl z-0"
+    class="relative flex-col flex gap-5 text-center py-24 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
   >
-    <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
-      <div
-        class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
-        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-      />
+    <p class="text-indigo-500 font-bold text-[16px] mb-8">Pricing</p>
+    <div class="text-[30px] md:text-[48px] lg:text-[60px]">
+      Elevate Your Photography
+      <br />
+      with One Click
     </div>
-    <p class="text-indigo-500 font-medium text-[16px] mb-8">Pricing</p>
-    <div>Elevate Your Photography <br /> with One Click</div>
-    <p class="text-sm">
+    <p class="text-base text-[16px] text-[#93A3B8]">
       Simplify your editing process, achieve professional-grade results, and
       enhance your images seamlessly.
     </p>
@@ -831,12 +612,6 @@ class="flex justify-center justify-items-center w-screen h-fit scroll-smooth cur
 </div>
 
 <div class="flex justify-center justify-items-center w-screen h-screen">
-  <div class="absolute transform-gpu blur-[68px]" aria-hidden="true">
-    <div
-      class="aspect-[1108/632] w-[35.25rem] bg-gradient-to-r from-[#ff8c66] to-[#ff4a0e] opacity-30"
-      style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-    />
-  </div>
   <div class="flex flex-col lg:flex-row gap-8 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto py-14">
       <Card class="h-fit relative border-indigo-500 border-2 " padding="xl">
@@ -1057,10 +832,21 @@ class="flex justify-center justify-items-center w-screen h-fit scroll-smooth cur
   </div>
 </div>
 
+<div></div>
+
 <div id="faq" class="max-w-screen-xl mx-auto px-5">
   <div class="flex flex-col items-center">
-    <h2 class="font-bold text-black text-5xl tracking-tight">FAQ</h2>
+    <h2 class="font-bold text-black text-5xl mt-44 tracking-tight">FAQ</h2>
     <p class="text-black text-xl mt-3">Frequently asked questions</p>
+    <div
+      class="absolute transform-gpu blur-[68px] pointer-events-none"
+      aria-hidden="true"
+    >
+      <div
+        class="aspect-[1108/632] w-[60.25rem] bg-gradient-to-r from-purple-500 to-pink-500 opacity-30"
+        style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
+      ></div>
+    </div>
   </div>
   <div class="grid divide-y divide-neutral-200 mb-11 max-w-xl mx-auto mt-8">
     <div class="py-5">

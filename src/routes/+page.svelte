@@ -117,6 +117,8 @@
   }
 </script>
 
+
+<!--CTA part were their the text in the left and the video on the right-->
 <div class="mt-11">
   <div
     class="absolute transform-gpu blur-[68px] pointer-events-none"
@@ -172,6 +174,7 @@
   </div>
 </div>
 
+<!-- Section where is a dropzone and you upload an IMG-->
 <div class="flex flex-col mt-11 py-4">
   <h1 class="text-center font-bold py-3 text-[30px] lg:text-[60px]">
     Screenshot Background Removal
@@ -254,6 +257,8 @@
   </div>
 </div>
 
+
+<!--Uncover something hidden section the example of images with and without background-->
 <div>
   <div
     class="flex justify-center text-black font-bold text-[32px] md:text-[48px] mt-20"
@@ -331,8 +336,9 @@
   </div>
 </div>
 
-<div id="howtouse"></div>
 
+<!-- how to use section--> 
+<div id="howtouse"></div>
 <div
   class="flex flex-col lg:flex-row items-center mt-24 justify-center pb-24 pt-11"
 >
@@ -341,503 +347,251 @@
       Let's Get Started
     </h1>
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 px-6 sm:px-8 max-w-[1200px] w-full mx-auto mb-8"
-    >
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 px-6 sm:px-8 max-w-[1200px] w-full mx-auto mb-8">
       <!-- Box 1 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
           </svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Upload image</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          For best results choose an image where the subject has clear edges
-          with nothing overlapping.
-        </p>
+        <p class="text-[16px] text-[#64748B]">For best results choose an image where the subject has clear edges with nothing overlapping.</p>
       </a>
-
+    
       <!-- Box 2 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
-
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Remove background</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Upload your image to automatically remove the background in an
-          instant.
-        </p>
+        <p class="text-[16px] text-[#64748B]">Upload your image to automatically remove the background in an instant.</p>
       </a>
-
+    
       <!-- Box 3 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
           </svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Download image</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Download your new image as a PNG file with a transparent background to
-          save, share or keep editing.
-        </p>
+        <p class="text-[16px] text-[#64748B]">Download your new image as a PNG file with a transparent background to save, share or keep editing.</p>
       </a>
-
+    
       <!-- Box 4 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
           </svg>
           <div class=" mr-2"></div>
           <h3 class="text-lg font-bold">Margins and Spaces</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Fine-tune the margins and spaces
-        </p>
+        <p class="text-[16px] text-[#64748B]">Fine-tune the margins and spaces</p>
       </a>
-
+    
       <!-- Box 5 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h2.25m8.25-8.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-7.5A2.25 2.25 0 0 1 8.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 0 0-2.25 2.25v6"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h2.25m8.25-8.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-7.5A2.25 2.25 0 0 1 8.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 0 0-2.25 2.25v6" />
           </svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Shadow</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Add a shadow and personalize its color, blur, offset x and y
-        </p>
+        <p class="text-[16px] text-[#64748B]">Add a shadow and personalize its color, blur, offset x and y</p>
       </a>
-
+    
       <!-- Box 6 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-rectangle-horizontal"
-            ><rect width="20" height="12" x="2" y="6" rx="2" /></svg
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rectangle-horizontal"><rect width="20" height="12" x="2" y="6" rx="2" /></svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Rounded edge</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Round off the edges for a sleek look
-        </p>
+        <p class="text-[16px] text-[#64748B]">Round off the edges for a sleek look</p>
       </a>
-
+    
       <!-- Box 7 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
           </svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Fully private</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          CaptureQuest runs 100% locally in your browser. We only keep your
-          Images on our server when you save it.
-        </p>
-        <div class="mt-6">
-          <a
-            href="#"
-            class="block px-3 py-2 font-semibold text-center duration-200 rounded-md md:inline text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-            >Try For Free</a
-          >
-        </div>
-        <p class="text-[16px] text-[#64748B]">
-          Share* directly on your socials
-        </p>
+        <p class="text-[16px] text-[#64748B]">CaptureQuest runs 100% locally in your browser. We only keep your Images on our server when you save it.</p>
       </a>
-
-      <!-- Box 9 -->
-      <a
-        href="/app"
-        class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer"
-      >
+    
+      <!-- Box 8 (Missing Box) -->
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
         <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-save"
-            ><path
-              d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
-            /><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" /><path
-              d="M7 3v4a1 1 0 0 0 1 1h7"
-            /></svg
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5h15m-15 3h15m-15 3h15m-15 3h15m-15 3h15" />
+          </svg>
+          <div class="mr-2"></div>
+          <h3 class="text-lg font-bold">Text Overlay</h3>
+        </div>
+        <p class="text-[16px] text-[#64748B]">Add text overlays to your images with customizable fonts and styles.</p>
+      </a>
+    
+      <!-- Box 9 -->
+      <a href="/app" class="box group bg-gray-100 rounded-lg p-4 shadow-lg space-y-3 flex flex-col transition-transform duration-300 hover:translate-y-[-10px] hover:shadow-indigo-500/40 cursor-pointer">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" /><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7" /><path d="M7 3v4a1 1 0 0 0 1 1h7" /></svg>
           <div class="mr-2"></div>
           <h3 class="text-lg font-bold">Save</h3>
         </div>
-        <p class="text-[16px] text-[#64748B]">
-          Save your designs for future editing sessions
-        </p>
+        <p class="text-[16px] text-[#64748B]">Save your designs for future editing sessions</p>
       </a>
+    
+      <!-- Empty Box to maintain grid alignment -->
       <div></div>
-
-      <button
-        class=" px-16 py-2 my-4 rounded-full font-semibold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-      >
-        Upload Image
-      </button>
+    
+      <!-- Upload Image Button -->
+      <div class="flex justify-center w-full">
+        <button class="px-16 py-2 my-4 rounded-full font-semibold text-lg text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">Upload Image</button>
+      </div>
     </div>
-  </div>
 </div>
+</div>    
+
+
+
+<!-- Pricing part this is the text on top of the pricing card -->
 <div id="pricing" class="h-full scroll-smooth w-full relative">
-  <div
-    class="relative flex-col flex gap-5 text-center py-24 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-  >
-    <p class="text-indigo-500 font-bold text-[16px] mb-8">Pricing</p>
-    <div class="text-[30px] md:text-[48px] lg:text-[60px]">
+  <div class="relative flex flex-col gap-5 text-center pt-24 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+    <p class="text-indigo-500 font-bold text-sm sm:text-base md:text-lg lg:text-xl ">Pricing</p>
+    <div class="text-[33px] sm:text-2xl md:text-4xl lg:text-5xl   leading-tight">
       Elevate Your Photography
       <br />
       with One Click
     </div>
-    <p class="text-base text-[16px] text-[#93A3B8]">
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl text-[#93A3B8]  mb-80 sm:mb-4 md:mb-4 mt-4">
       Simplify your editing process, achieve professional-grade results, and
       enhance your images seamlessly.
     </p>
   </div>
-</div>
-
-<div class="flex justify-center justify-items-center w-screen h-screen">
-  <div class="flex flex-col lg:flex-row gap-8 mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto py-14">
-      <Card class="h-fit relative border-indigo-500 border-2 " padding="xl">
-        <div
-          class=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 absolute flex items-center gap-1 -top-0 -translate-y-1/2 left-8 studio-primary-gradient rounded py-1 px-2.5 text-xxs tracking-widest text-white"
-        >
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-              />
-            </svg>
-          </span>
-
-          Popular
-        </div>
-
-        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
-          Pro plan
-        </h5>
-        <div
-          class="flex items-baseline text-gray-900 dark:text-white justify-content: center;"
-        >
-          <span class="text-3xl font-semibold">$</span>
-          <span class="text-5xl font-extrabold tracking-tight">15</span>
-          <span
-            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
-            >/month</span
-          >
-        </div>
-        <!-- List -->
-        <ul class="my-7 space-y-4">
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Advanced editing features
+  <!-- Pricing part this is the pricing card -->
+  <div class="flex flex-col lg:flex-row justify-center items-center w-screen h-screen">
+    <div class="flex flex-col gap-16 mx-auto p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mx-auto">
+        <Card class="pricing-card h-fit relative border-indigo-500 border-2 max-w-4xl p-8 transition-transform transform hover:scale-105 shadow-lg" padding="xl">
+          <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 absolute flex items-center gap-1 -top-0 -translate-y-1/2 left-8 studio-primary-gradient rounded py-1 px-2.5 text-xxs tracking-widest text-white">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+              </svg>
             </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              High quality exports
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Unlimited background removal
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Access to future updates and new features
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Priority support
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Advanced templates
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Batch processing
-            </span>
-          </li>
-        </ul>
-        <form action="?/subscribepro" method="POST">
-          <div class="flex flex-row justify-center">
-            <button
-              class="px-32 rounded-xl py-2 text-white text-nowrap bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-              >Get Started</button
-            >
+            Popular
           </div>
-        </form>
-      </Card>
-
-      <Card class="h-fit" padding="xl">
-        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
-          Free plan
-        </h5>
-        <div
-          class="flex items-baseline text-gray-900 dark:text-white justify-content: center;"
-        >
-          <span class="text-3xl font-semibold">$</span>
-          <span class="text-5xl font-extrabold tracking-tight">0</span>
-          <span
-            class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"
-            >/month</span
-          >
-        </div>
-        <!-- List -->
-        <ul class="my-7 space-y-4">
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Basic editing features
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Limited to 3 images for background removal
-            </span>
-          </li>
-          <li class="flex space-x-2 rtl:space-x-reverse">
-            <CheckCircleSolid
-              class="w-4 h-4 text-indigo-500 dark:text-primary-500"
-            />
-            <span
-              class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
-            >
-              Limited resolution download
-            </span>
-          </li>
-          <li
-            class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500"
-          >
-            <CheckCircleSolid
-              class="w-4 h-4 text-gray-400 dark:text-gray-500"
-            />
-            <span class="text-base font-normal leading-tight text-gray-500"
-              >Priority support</span
-            >
-          </li>
-          <li
-            class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500"
-          >
-            <CheckCircleSolid
-              class="w-4 h-4 text-gray-400 dark:text-gray-500"
-            />
-            <span class="text-base font-normal leading-tight text-gray-500"
-              >High quality exports</span
-            >
-          </li>
-          <li
-            class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500"
-          >
-            <CheckCircleSolid
-              class="w-4 h-4  text-gray-400 dark:text-gray-500"
-            />
-            <span class="text-base font-normal leading-tight text-gray-500"
-              >Customizable presets</span
-            >
-          </li>
-          <li
-            class="flex space-x-2 rtl:space-x-reverse line-through decoration-gray-500"
-          >
-            <CheckCircleSolid
-              class="w-4 h-4 text-gray-400 dark:text-gray-500"
-            />
-            <span class="text-base font-normal leading-tight text-gray-500"
-              >24×7 phone & email support</span
-            >
-          </li>
-        </ul>
-        <a class="flex flex-row justify-center" href="">
-          <button
-            class="px-32 rounded-xl py-2 text-white text-nowrap bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer"
-            >Get Started</button
-          >
-        </a>
-      </Card>
+          <h5 class="mb-4 text-2xl font-medium text-gray-500 dark:text-gray-400">Pro plan</h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white justify-content: center;">
+            <span class="text-4xl font-semibold">$</span>
+            <span class="text-6xl font-extrabold tracking-tight">14.99</span>
+            <span class="ms-1 text-2xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+          </div>
+          <!-- List -->
+          <ul class="my-7 space-y-4">
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Advanced editing features</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">High quality exports</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Unlimited background removal</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Access to future updates and new features</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Priority support</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Advanced templates</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Batch processing</span>
+            </li>
+          </ul>
+          <form action="?/subscribepro" method="POST">
+            <div class="flex flex-row justify-center">
+              <button class="px-40 py-3 text-lg rounded-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">Get Started</button>
+            </div>
+          </form>
+        </Card>
+        <Card class="pricing-card h-fit relative border-gray-200 border-2 max-w-4xl p-8 transition-transform transform hover:scale-105 shadow-lg" padding="xl">
+          <h5 class="mb-4 text-2xl font-medium text-gray-500 dark:text-gray-400">Free plan</h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white justify-content: center;">
+            <span class="text-4xl font-semibold">$</span>
+            <span class="text-6xl font-extrabold tracking-tight">0</span>
+            <span class="ms-1 text-2xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+          </div>
+          <!-- List -->
+          <ul class="my-7 space-y-4">
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Basic editing features</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Limited to 3 images for background removal</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse">
+              <CheckCircleSolid class="w-6 h-6 text-indigo-500 dark:text-primary-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Limited resolution download</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid class="w-6 h-6 text-gray-400 dark:text-gray-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500">Priority support</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid class="w-6 h-6 text-gray-400 dark:text-gray-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500">High quality exports</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid class="w-6 h-6 text-gray-400 dark:text-gray-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500">Customizable presets</span>
+            </li>
+            <li class="flex space-x-3 rtl:space-x-reverse line-through decoration-gray-500">
+              <CheckCircleSolid class="w-6 h-6 text-gray-400 dark:text-gray-500" />
+              <span class="text-lg font-normal leading-tight text-gray-500">24x7 phone & email support</span>
+            </li>
+          </ul>
+          <form action="?/subscribefree" method="POST">
+            <div class="flex flex-row justify-center">
+              <button class="px-40 py-3 text-lg rounded-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">Get Started</button>
+            </div>
+          </form>
+        </Card>
+      </div>
     </div>
   </div>
 </div>
 
-<div></div>
 
-<div id="faq" class="max-w-screen-xl mx-auto px-5">
+
+
+<!--FAQ'S Section-->
+<div id="faq" class="max-w-screen-xl mx-auto px-10 ">
   <div class="flex flex-col items-center">
-    <h2 class="font-bold text-black text-5xl mt-44 tracking-tight">FAQ</h2>
-    <p class="text-black text-xl mt-3">Frequently asked questions</p>
+    <h2 class="font-bold text-black text-6xl mt-44 tracking-tight">FAQ</h2>
+    <p class="text-black text-2xl mt-5">Frequently asked questions</p>
     <div
       class="absolute transform-gpu blur-[68px] pointer-events-none"
       aria-hidden="true"

@@ -75,23 +75,28 @@
 
   <!-- Mobile Navigation Menu -->
   <div
-    class={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-[#FFFF00] w-full`}
+    class={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-[#E2E8F0CC] border-4 border-spacing-8 w-full`}
   >
     <nav class="flex flex-col items-center">
       <a
         href="/"
         class="py-2 w-full text-center cursor-pointer scroll-smooth hover:text-gray-900"
-        >Home</a
+        >Features</a
       >
       <a
-        href="/about"
+        href="#howtouse"
         class="py-2 w-full text-center cursor-pointer scroll-smooth hover:text-gray-900"
-        >About</a
+        >How to use</a
       >
       <a
-        href="/pricing"
+        href="#pricing"
         class="py-2 w-full text-center cursor-pointer scroll-smooth hover:text-gray-900"
         >Pricing</a
+      >
+      <a
+        href="#faq"
+        class="py-2 w-full text-center cursor-pointer scroll-smooth hover:text-gray-900"
+        >Faqs</a
       >
     </nav>
   </div>
@@ -102,29 +107,15 @@
 <div class=" mx-auto">
   <footer class="p-4 bg-[#E2E8F0CC] shadow md:px-6 md:py-8 dark:bg-gray-800">
     <div class="sm:flex sm:items-center sm:justify-between">
-      <a href="#" target="_blank" class="flex items-center mb-4 sm:mb-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-camera ml-11 mr-3 inline stroke-black"
-        >
-          <path
-            d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
-          />
-          <circle cx="12" cy="13" r="3" />
-        </svg>
+      <div class="flex items-center mb-4 sm:mb-0">
+        <div class="ml-[140px]"><img class="w-9 h-9 inline-block" src="/icon.png" alt="" /></div>
+
+
         <span
-          class="self-center text-xl font-semibold whitespace-nowrap text-black"
+          class="self-center text-xl font-semibold cursor-pointer whitespace-nowrap text-black"
           >CaptureQuest</span
         >
-      </a>
+      </div>
       <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
         <li>
           <a href="#" class="mr-4 text-sm hover:underline md:mr-6 text-black"
@@ -147,10 +138,10 @@
       </ul>
     </div>
     <hr class="my-6 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm text-black sm:text-center"
-      >© 2024 <a href="/" target="_blank" class="hover:underline"
-        >CaptureQuest™</a
-      >. All Rights Reserved.
+    <span class="block text-sm hover:underline cursor-pointer text-black sm:text-center"
+      >© 2024 
+        CaptureQuest™
+      . All Rights Reserved.
     </span>
   </footer>
 </div>

@@ -79,7 +79,7 @@
   >
     <nav class="flex flex-col items-center">
       <a
-        href="/"
+        href="#Feautres"
         class="py-2 w-full text-center cursor-pointer scroll-smooth hover:text-gray-900"
         >Features</a
       >
@@ -104,44 +104,29 @@
 
 <slot></slot>
 
-<div class=" mx-auto">
+<div class="mx-auto">
   <footer class="p-4 bg-[#E2E8F0CC] shadow md:px-6 md:py-8 dark:bg-gray-800">
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <div class="flex items-center mb-4 sm:mb-0">
-        <div class="ml-[140px]"><img class="w-9 h-9 inline-block" src="/icon.png" alt="" /></div>
-
-
-        <span
-          class="self-center text-xl font-semibold cursor-pointer whitespace-nowrap text-black"
-          >CaptureQuest</span
-        >
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center justify-center mb-4 sm:mb-0">
+        <div class="lg:ml-[140px]  "><img class="w-9 h-9 inline-block" src="/icon.png" alt="" /></div>
+        <span class="self-center text-xl font-semibold cursor-pointer whitespace-nowrap text-black">CaptureQuest</span>
       </div>
-      <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
+      <ul class="flex flex-wrap justify-center sm:justify-start items-center mb-6 sm:mb-0">
         <li>
-          <a href="#" class="mr-4 text-sm hover:underline md:mr-6 text-black"
-            >Home</a
-          >
+          <a href="#Feautres" class="mr-4 text-sm hover:underline md:mr-6 text-black">Features</a>
         </li>
         <li>
-          <a href="#" class="mr-4 text-sm text-black hover:underline md:mr-6"
-            >About</a
-          >
+          <a href="#howtouse" class="mr-4 text-sm text-black hover:underline md:mr-6">How to use</a>
         </li>
         <li>
-          <a href="#" class="mr-4 text-sm text-black hover:underline md:mr-6"
-            >Pricing</a
-          >
+          <a href="#pricing" class="mr-4 text-sm text-black hover:underline md:mr-6">Pricing</a>
         </li>
         <li>
-          <a href="#" class="text-sm text-black hover:underline">Contact</a>
+          <a href="#faq" class="text-sm text-black hover:underline">Faqs</a>
         </li>
       </ul>
     </div>
     <hr class="my-6 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm hover:underline cursor-pointer text-black sm:text-center"
-      >© 2024 
-        CaptureQuest™
-      . All Rights Reserved.
-    </span>
+    <span class="block text-sm hover:underline cursor-pointer text-black text-center sm:text-center">© 2024 CaptureQuest™. All Rights Reserved.</span>
   </footer>
 </div>

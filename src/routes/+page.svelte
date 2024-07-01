@@ -115,11 +115,55 @@
     const summaryElement = event.currentTarget;
     summaryElement.classList.toggle("text-indigo-500");
   }
+
+
+  let showPopup = false;
+
+  function togglePopup() {
+    showPopup = !showPopup;
+  }
+
+  function handleOutsideClick(event) {
+    if (event.target.classList.contains('popup-overlay')) {
+      showPopup = false;
+    }
+  }
+
+  let showMore = false;
+
+function toggleText() {
+  showMore = !showMore;
+}
 </script>
 
+<div class="max-w-md mx-auto mt-20">
+  <h1 class="py-2 font-bold text-xl">Article Heading</h1>
+  <p class="leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum vel nunc commodo hendrerit sit amet vel
+    nisi. Donec sodales maximus justo, nec dictum lectus malesuada non. Sed auctor ultrices tellus non varius.
+    {#if showMore}
+      <span>
+        Sed eu enim malesuada, fermentum mi eu, finibus velit. Nam quis blandit velit, vel vehicula neque. Etiam eu lorem suscipit, sollicitudin ante at, pharetra quam.
+      </span>
+    {/if}
+  </p>
+  <button on:click={toggleText} class="mt-4 text-blue-500 focus:outline-none">
+    {showMore ? 'Read Less' : 'Read More'}
+  </button>
+</div>
 
 <!--CTA part were their the text in the left and the video on the right-->
 <div class="mt-11">
+
+  <button class="bg-slate-600 text-pink-500" on:click={togglePopup}>Open Popup</button>
+
+{#if showPopup}
+  <div class="popup">
+    <h2>This is my popup content!</h2>
+    <button on:click={togglePopup}>Close</button>
+  </div>
+{/if}
+
   <div
     class="absolute transform-gpu blur-[68px] pointer-events-none"
     aria-hidden="true"
@@ -469,8 +513,10 @@
 <div id="pricing" class="h-full scroll-smooth w-full relative">
   <div class="relative flex flex-col gap-5 text-center pt-24 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
     <p class="text-indigo-500 font-bold text-sm sm:text-base md:text-lg lg:text-xl ">Pricing</p>
-    <div class="text-[33px] sm:text-2xl md:text-4xl lg:text-5xl   leading-tight">
-      Elevate Your Photography
+    <div class="text-[33px] sm:text-2xl md:text-4xl lg:text-5xl ">
+      Elevate Your <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#4F50C9] leading-[60px] mb-1 relative inline-block">
+        <span class="relative text-white">Photography</span>
+      </span>
       <br />
       with One Click
     </div>
@@ -846,3 +892,14 @@
     </div>
   </div>
 </div>
+
+<style>
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Other styles... */
+  z-index: 10; /* Ensure it's above other elements */
+}
+</style>

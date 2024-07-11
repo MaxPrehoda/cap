@@ -30,6 +30,45 @@
     }
   }
 
+  let imageFile;
+    let originalImage;
+    let processedImage;
+
+    function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (file) {
+            imageFile = file;
+            originalImage = URL.createObjectURL(file);
+        }
+    }
+
+    async function removeBackground() {
+        if (!imageFile) return;
+
+        const formData = new FormData();
+        formData.append('image', imageFile);
+
+        try {
+            const response = await fetch('http://localhost:5000/remove-bg', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) throw new Error('Network response was not ok');
+
+            const data = await response.json();
+            processedImage = `data:image/png;base64,${data.image}`;
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
+
+
+
+
+
+
   function handleMouseMove(event) {
     const container = event.currentTarget;
     const boundingRect = container.getBoundingClientRect();
@@ -45,7 +84,7 @@
   import { Dropzone } from "flowbite-svelte";
 
   let imageUrl = "";
-  let processedImage = null;
+  
   let value = [];
   let color = "#FFFFFF";
   const dropHandle = async (event) => {
@@ -116,53 +155,26 @@
     summaryElement.classList.toggle("text-indigo-500");
   }
 
-
-  let showPopup = false;
-
-  function togglePopup() {
-    showPopup = !showPopup;
-  }
-
-  function handleOutsideClick(event) {
-    if (event.target.classList.contains('popup-overlay')) {
-      showPopup = false;
-    }
-  }
-
-  let showMore = false;
-
-function toggleText() {
-  showMore = !showMore;
-}
 </script>
 
-<div class="max-w-md mx-auto mt-20">
-  <h1 class="py-2 font-bold text-xl">Article Heading</h1>
-  <p class="leading-relaxed">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ipsum vel nunc commodo hendrerit sit amet vel
-    nisi. Donec sodales maximus justo, nec dictum lectus malesuada non. Sed auctor ultrices tellus non varius.
-    {#if showMore}
-      <span>
-        Sed eu enim malesuada, fermentum mi eu, finibus velit. Nam quis blandit velit, vel vehicula neque. Etiam eu lorem suscipit, sollicitudin ante at, pharetra quam.
-      </span>
-    {/if}
-  </p>
-  <button on:click={toggleText} class="mt-4 text-blue-500 focus:outline-none">
-    {showMore ? 'Read Less' : 'Read More'}
-  </button>
-</div>
+
+
+<svelte:head>
+  <title>CaptureQuest</title>
+  <meta name="description" content="Transform screenshots instantly. Capture, drag & drop images.Edit effortlessly, then share or download your stunning designs. Elevate your visuals with our easy-to-use beautification tool." />
+  <meta
+    name="keywords"
+    content="Screenshot removal, background removal, image editing, image cleaning, Capture Quest, "
+  />
+</svelte:head>
+
+
+
+
 
 <!--CTA part were their the text in the left and the video on the right-->
 <div class="mt-11">
 
-  <button class="bg-slate-600 text-pink-500" on:click={togglePopup}>Open Popup</button>
-
-{#if showPopup}
-  <div class="popup">
-    <h2>This is my popup content!</h2>
-    <button on:click={togglePopup}>Close</button>
-  </div>
-{/if}
 
   <div
     class="absolute transform-gpu blur-[68px] pointer-events-none"
@@ -575,11 +587,13 @@ function toggleText() {
               <span class="text-lg font-normal leading-tight text-gray-500 dark:text-gray-400">Batch processing</span>
             </li>
           </ul>
+
           <form action="?/subscribepro" method="POST">
             <div class="flex flex-row justify-center">
-              <button class="px-40 py-3 text-lg rounded-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">Get Started</button>
+              <button type="submit" class="px-40 py-3 text-lg rounded-xl text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">Get Started</button>
             </div>
           </form>
+
         </Card>
         <Card class="pricing-card h-fit relative border-gray-200 border-2 max-w-4xl p-8 transition-transform transform hover:scale-105 shadow-lg" padding="xl">
           <h5 class="mb-4 text-2xl font-medium text-gray-500 dark:text-gray-400">Free plan</h5>
@@ -892,14 +906,3 @@ function toggleText() {
     </div>
   </div>
 </div>
-
-<style>
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Other styles... */
-  z-index: 10; /* Ensure it's above other elements */
-}
-</style>

@@ -6,7 +6,16 @@
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
   }
+
+  import { page } from '$app/stores';
+
+  
+
+ // List of routes where the footer should not be displayed
+ const routesWithoutFooter = ['/app'];
 </script>
+
+
 
 <header class="bg-white sticky top-0 shadow z-50">
   <div
@@ -26,6 +35,7 @@
     <nav
       class="hidden md:flex flex-wrap items-center gap-6 scroll-smooth text-base cursor-pointer justify-center space-x-5"
     >
+    
       <a
         href="#Feautres"
         class="hover:text-gray-900 scroll-smooth cursor-pointer">Features</a
@@ -104,6 +114,8 @@
 
 <slot></slot>
 
+
+{#if !routesWithoutFooter.includes($page.url.pathname)}
 <div class="mx-auto">
   <footer class="p-4 bg-[#E2E8F0CC] shadow md:px-6 md:py-8 dark:bg-gray-800">
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -130,3 +142,6 @@
     <span class="block text-sm hover:underline cursor-pointer text-black text-center sm:text-center">© 2024 CaptureQuest™. All Rights Reserved.</span>
   </footer>
 </div>
+{/if}
+
+

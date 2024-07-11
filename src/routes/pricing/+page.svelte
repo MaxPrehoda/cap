@@ -142,8 +142,8 @@
             </span>
           </li>
         </ul>
-        <form action="?/subscribepro" method="POST">
-          <Button class="w-full" type="submit">Get Started</Button>
+        <form action="?/subscribepr" method="POST">
+          <Button class="w-full" >Get Started</Button>
         </form>
       </Card>
 

@@ -88,7 +88,7 @@ export async function load({ url }) {
   </html>`;
 
     const emailData = {
-      from: "Capture Quest <noreply@sandboxdff0aaf9dfa84596968bf9c207b4c610.mailgun.org>",
+      from: "Capture Quest <noreply@capturequest.ai>",
       to: cus_email,
       subject: "Thank you for your purchase!",
       html: emailHTML,
@@ -96,7 +96,7 @@ export async function load({ url }) {
     };
 
     await mg.messages.create(
-      "sandboxdff0aaf9dfa84596968bf9c207b4c610.mailgun.org",
+      "capturequest.ai",
       emailData
     );
 

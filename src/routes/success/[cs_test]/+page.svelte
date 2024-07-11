@@ -1,9 +1,13 @@
 <script>
   import { confetti } from "@neoconfetti/svelte";
+
+
 </script>
 
+
+
 <div
-  class="flex h-screen max-h-screen overflow-hidden relative items-center justify-center bg-gradient-to-b from-zinc-900 to-zinc-600"
+  class="flex h-screen max-h-screen overflow-hidden relative items-center justify-center "
 >
   <div
     class="relative z-10"
@@ -48,7 +52,7 @@
                   To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               -->
         <div
-          class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6 shaking-element"
+          class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-2xl shadow-purple-600 transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6 shaking-element"
         >
           <div>
             <div
@@ -78,20 +82,18 @@
               </h3>
               <div class="mt-2">
                 <p class="text-sm text-neutral-800">
-                  Congratulations! You've joined Capture Quest. Get ready to
-                  enjoy a dynamic learning experience and vibrant community of
-                  SaaS entrepreneurs.
+                  Your adventure in capturing stunning images begins now. Start exploring CaptureQuest today! .
                 </p>
               </div>
             </div>
           </div>
           <div class="mt-5 sm:mt-6">
             <a
-              href="https://discord.gg/capquest"
+              href="/app"
               type="button"
               class="inline-flex w-full justify-center rounded-md bg-emerald-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
             >
-              Join Capture Quest Discord <svg
+              Start editing <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -108,29 +110,7 @@
               >
             </a>
           </div>
-          <div class="mt-3 sm:mt-4">
-            <a
-              href="/app"
-              type="button"
-              class="inline-flex w-full justify-center rounded-md bg-gray-700 px-3 py-2 text-sm font-semibold text-white shadow-sm outline-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-            >
-              View Resources <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-blocks lucide lucide-plus-circle w-5 h-5 inline mb-0.5 ml-1.5"
-                ><rect width="7" height="7" x="14" y="3" rx="1" /><path
-                  d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
-                /></svg
-              >
-            </a>
-          </div>
+        
         </div>
       </div>
     </div>
